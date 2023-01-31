@@ -9,6 +9,7 @@ public class Enemy {
         this. damage = damage;
     }
 
+    public String getEnemyName(){ return name; }
     public boolean is_alive(){
         return (this.hp > 0);
     }

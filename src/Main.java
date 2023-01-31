@@ -1,3 +1,5 @@
+import java.util.GregorianCalendar;
+
 public class Main {
     public static void main(String[] args) {
         Gold goldBar = new Gold(10);
@@ -10,5 +12,11 @@ public class Main {
         Enemy fastZombie = new Enemy("Fast Zombie", 50, 10);
         Enemy spotDog = new Enemy("Spot Dog", 20, 15);
         Enemy bigSkeleton = new Enemy("Big Skeleton", 40, 20);
+        System.out.println(greenOgre.getEnemyName());
+        System.out.println(redOgre.getEnemyName());
+        System.out.println(slowZombie.getEnemyName());
+        System.out.println(fastZombie.getEnemyName());
+        System.out.println(spotDog.getEnemyName());
+        System.out.println(bigSkeleton.getEnemyName());
     }
 }
