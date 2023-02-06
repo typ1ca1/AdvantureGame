@@ -1,5 +1,8 @@
 public class Zombie extends Enemy{
-    public Zombie(String name, int hp, int damage){
+
+    private int speed;
+    public Zombie(String name, int hp, int damage, int speed){
         super(name, hp, damage);
+        this.speed = speed;
     }
 }
