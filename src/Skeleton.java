@@ -1,5 +1,8 @@
 public class Skeleton extends Enemy{
-    public Skeleton(){
-        super("Skeleton", 20, 10);
+
+    private String bowDescription;
+    public Skeleton(String name, int hp, int damage, String bowDescription){
+        super(name, hp, damage);
+        this.bowDescription = bowDescription;
     }
 }
