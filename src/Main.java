@@ -14,7 +14,7 @@ public class Main {
         Skeleton bigSkeleton = new Skeleton("Big Skeleton", 40, 20, "Bow shoots with three arrows at a time.");
         System.out.println(greenOgre.getEnemyName());
         System.out.println(redOgre.getEnemyName());
-        System.out.println(slowZombie.getEnemyName());
+        System.out.println(slowZombie.getEnemyName());  
         System.out.println(fastZombie.getEnemyName());
         System.out.println(spotDog.getEnemyName());
         System.out.println(bigSkeleton.getEnemyName());
