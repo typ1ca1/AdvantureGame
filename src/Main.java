@@ -2,7 +2,7 @@ import java.util.GregorianCalendar;
 
 public class Main {
     public static void main(String[] args) {
-        Gold goldBar = new Gold(10);
+     /** Gold goldBar = new Gold(10);
         Weapon magicSword = new Weapon("Magic Sword", "qwe", 20, 50);
         Weapon softPillow = new Weapon("Soft Pillow", "A super soft pillow", 3, 1);
         Weapon bigMace = new Weapon("A big mace", "Biggest mace in the world", 10, 20);
@@ -18,5 +18,12 @@ public class Main {
         System.out.println(fastZombie.getEnemyName());
         System.out.println(spotDog.getEnemyName());
         System.out.println(bigSkeleton.getEnemyName());
+      */
+
+     World w = new World();
+     w.load_tiles();
+
+     MapTile x =new MapTile(0,0);
+     x.adjacent_moves();
     }
 }
