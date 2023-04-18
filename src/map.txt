@@ -1,5 +1,5 @@
- 	 	 	 	LeaveCaveRoom
-			CyclopsRoom	EmptyCavePath
- 	 	 	EmptyCavePath	  
- 	 	 	TreasureRoom	 
-OgreRoom	TreasureRoom	StartingRoom	TreasureRoom	FindDaggerRoom
+ 	 	 	OgreCave	LeaveCaveRoom
+			CyclopsCave	EmptyCavePath
+ 	 	 	EmptyCavePath	 
+ 	 	 	TreasureCave	MailArmorCave 
+OgreCave	StoneSwordCave	StartingRoom	TreasureCave	FindDaggerRoom
