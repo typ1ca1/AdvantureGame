@@ -15,12 +15,12 @@ public class ZombieCave extends EnemyCave{
     }
 
     @Override
-    public void modify_player(Player the_player){
-            if (enemy.is_alive()){
-                the_player.hp = the_player.hp - enemy.damage;
-            }
-            System.out.printf("Enemy does %d damage. You have %d HP remaining.", enemy.damage, the_player.hp);
+    public void modify_player(Player the_player) {
+        if (enemy.is_alive()) {
+            the_player.attackEnemy(enemy);
+            the_player.hp = the_player.hp - enemy.damage;
+            System.out.printf("\n Enemy does %d damage. Enemy's HP %d. You have %d HP remaining.", enemy.damage, enemy.hp, the_player.hp);
+        }
     }
-
 
 }

@@ -19,11 +19,13 @@ public class EnemyCave extends MapTile{
         return moves;
     }
 
-    public void modify_player(Player the_player){
-        if (enemy.is_alive() ){
-            the_player.hp = the_player.hp - enemy.damage;
 
-            System.out.printf("The enemy gave you %d damage. You have %d HP left.", enemy.damage, the_player.hp);
+
+    public void modify_player(Player the_player){
+        if (enemy.is_alive()){
+            the_player.hp = the_player.hp - enemy.damage;
+            System.out.printf("\nThe enemy gave you %d damage. You have %d HP left.", enemy.damage, the_player.hp);
+
         }
     }
 

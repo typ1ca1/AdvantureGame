@@ -2,7 +2,7 @@
 
 public class OgreCave extends EnemyCave{
 
-    public OgreCave(int x, int y, Enemy ogre){
+    public OgreCave(int x, int y, Ogre ogre){
         super(x, y, ogre);
     }
 
@@ -15,10 +15,12 @@ public class OgreCave extends EnemyCave{
     }
 
     public void modify_player(Player the_player){
-        if (enemy.is_alive() && the_player.attackEnemy()){
+        if (enemy.is_alive()){
+            the_player.attackEnemy(enemy);
             the_player.hp = the_player.hp - enemy.damage;
-            System.out.printf("\n Enemy does %d damage. You have %d HP remaining.", enemy.damage, the_player.hp);
+            System.out.printf("\n Enemy does %d damage. Enemy's HP %d. You have %d HP remaining.", enemy.damage, enemy.hp,the_player.hp);
         }
+
 
     }
 

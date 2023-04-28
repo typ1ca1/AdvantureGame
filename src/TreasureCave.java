@@ -11,8 +11,8 @@ public class TreasureCave extends LootCave{
             return "";
     }
 
-    //public void modify_player(Player player){
-    //    if (pickedItem == false)
-    //        add_Loot(player);
-    //}
+    public void modify_player(Player player){
+        if (pickedItem == false)
+            add_Loot(player);
+    }
 }

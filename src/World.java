@@ -10,6 +10,7 @@ public class World {
     static Point Starting_Position = new Point(0, 0);
     //<> is generic that defines what array holds
     public static ArrayList<MapTile> history = new ArrayList<MapTile>();
+    private Player player;
 
     public void load_tiles() {
         List<String> rows = new ArrayList<String>();
@@ -43,6 +44,7 @@ public class World {
         }
     }
 
+
     public static MapTile tile_exists(int x, int y) {
         MapTile mt = null;
 
@@ -57,23 +59,23 @@ public class World {
                     mt = checkRoomExists(mt);
                     break;
                 case "ZombieCave":
-                    mt = new ZombieCave(x, y, new Zombie("Slow Zombie", 20, 35, 5));
+                    mt = new ZombieCave(x, y, new Zombie("Slow Zombie", 20, 10, 5));
                     mt = checkRoomExists(mt);
                     break;
                 case "SkeletonCave":
-                    mt = new SkeletonCave(x, y, new Skeleton("Big Skeleton", 40, 20, "Bow shoots with three arrows at a time."));
+                    mt = new SkeletonCave(x, y, new Skeleton("Big Skeleton", 40, 10, "Bow shoots with three arrows at a time."));
                     mt = checkRoomExists(mt);
                     break;
                 case "OgreCave":
-                    mt = new OgreCave(x, y, new Ogre("Green Ogre", 30, 25, "Color is green"));
+                    mt = new OgreCave(x, y, new Ogre("Green Ogre", 30, 10, "Color is green"));
                     mt = checkRoomExists(mt);
                     break;
                 case "GiantSpiderCave":
-                    mt = new GiantSpiderCave(x, y, new GiantSpider("Venomous Giant Spider", 40, 45, "Venom consist at least 40 different toxic proteins"));
+                    mt = new GiantSpiderCave(x, y, new GiantSpider("Venomous Giant Spider", 40, 15, "Venom consist at least 40 different toxic proteins"));
                     mt = checkRoomExists(mt);
                     break;
                 case "CyclopsCave":
-                    mt = new CyclopsCave(x, y, new Cyclope("Scary Cyclope", 35, 40, "It has giant blue eye"));
+                    mt = new CyclopsCave(x, y, new Cyclope("Scary Cyclope", 35, 20, "It has giant blue eye"));
                     mt = checkRoomExists(mt);
                     break;
                 case "BoatCave":
@@ -82,6 +84,18 @@ public class World {
                     break;
                 case "StoneSwordCave":
                     mt = new StoneSwordCave(x, y, new StoneSword());
+                    mt = checkRoomExists(mt);
+                case "HumanSkinCave":
+                    mt = new HumanSkinCave(x, y);
+                    mt = checkRoomExists(mt);
+                case "IronSwordCave":
+                    mt = new IronSwordCave(x, y, new IronSword());
+                    mt = checkRoomExists(mt);
+                case "EmptyCavePath":
+                    mt = new EmptyCavePath(x, y);
+                    mt = checkRoomExists(mt);
+                case "Doggy":
+                    mt = new DoggyCave(x, y, new Item("Doggy", "A nice dog that was left here.", 100));
                     mt = checkRoomExists(mt);
             }
         }

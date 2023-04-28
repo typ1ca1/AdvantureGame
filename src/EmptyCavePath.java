@@ -7,4 +7,8 @@ public class EmptyCavePath extends MapTile{
     public String intro_text(){
         return "\n You found an empty cave. Looks like it's a path to some other places.";
     }
+
+    @Override
+    public void modify_player(Player player) {
+    }
 }

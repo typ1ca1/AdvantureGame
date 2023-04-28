@@ -9,7 +9,7 @@ public class Game {
         world.load_tiles();
         //System.out.println("Enter Player Name:");
         //Scanner input = new Scanner(System.in);
-        String playerName= "X2";
+        String playerName= "t1p1cal";
         Player player = new Player(playerName);
 //		  //These lines load the starting room and display the text
         MapTile room = World.tile_exists(player.location_x, player.location_y);
@@ -22,7 +22,7 @@ public class Game {
                 room.modify_player(player);
 //			  // Check again since the room could have changed the player's state
                 if ((player.is_alive()) && (!player.victory)){
-                    System.out.print("Choose an action:\n");
+                    System.out.print("\nChoose an action:\n");
                     ArrayList<Action> available_actions = room.available_actions();
                     for (Action action:available_actions){
                         System.out.print(action.getHotkey() +" : " + action.getName()+"\n");
