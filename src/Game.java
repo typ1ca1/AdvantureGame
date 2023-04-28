@@ -7,9 +7,9 @@ public class Game {
     public static void main(String[] args) throws IOException{
         World world = new World();
         world.load_tiles();
-        //System.out.println("Enter Player Name:");
-        //Scanner input = new Scanner(System.in);
-        String playerName= "t1p1cal";
+        System.out.println("Enter Player Name:");
+        Scanner input = new Scanner(System.in);
+        String playerName= input.nextLine();
         Player player = new Player(playerName);
 //		  //These lines load the starting room and display the text
         MapTile room = World.tile_exists(player.location_x, player.location_y);
