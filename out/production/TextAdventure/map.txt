@@ -2,5 +2,5 @@
  	 	 	CyclopsCave	IronSwordCave
  	HumanSkinCave	 	EmptyCavePath	 
  	 	 	TreasureCave	HumanSkinCave
-OgreCave	StoneSwordCave	StartingRoom	TreasureCave	Doggy
+OgreCave	StoneSwordCave	StartingRoom	TreasureCave	 
  	 	EmptyCavePath	 	TreasureCave

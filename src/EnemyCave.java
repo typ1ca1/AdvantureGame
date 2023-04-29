@@ -12,6 +12,7 @@ public class EnemyCave extends MapTile{
     public ArrayList<Action> available_actions(){
         ArrayList<Action> moves = new ArrayList<Action>();
         moves = adjacent_moves();
+        moves.add(new ViewInventory());
         if(enemy.is_alive()){
             moves.add(new Attack());
             moves.add(new Flee());

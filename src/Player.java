@@ -200,12 +200,12 @@ public class Player implements Comparable<Player> {
                 }
             }
         } //End Code block for loop
-        System.out.printf("You use %s against %s!",best_weapon.name, enemy.name);
+        System.out.printf("\nYou use %s against %s! ",best_weapon.name, enemy.name);
         enemy.hp -= best_weapon.getDamage();
         if (!enemy.is_alive()){
-            System.out.printf("You killed %s!",enemy.name);
+            System.out.printf("\nYou killed %s!",enemy.name);
         }else{
-            System.out.printf("%s HP is %d.",enemy.name, enemy.hp);
+            System.out.printf("\n%s HP is %d.",enemy.name, enemy.hp);
         }
     }
 

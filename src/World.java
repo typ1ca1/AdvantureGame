@@ -85,18 +85,19 @@ public class World {
                 case "StoneSwordCave":
                     mt = new StoneSwordCave(x, y, new StoneSword());
                     mt = checkRoomExists(mt);
+                    break;
                 case "HumanSkinCave":
                     mt = new HumanSkinCave(x, y);
                     mt = checkRoomExists(mt);
+                    break;
                 case "IronSwordCave":
                     mt = new IronSwordCave(x, y, new IronSword());
                     mt = checkRoomExists(mt);
+                    break;
                 case "EmptyCavePath":
                     mt = new EmptyCavePath(x, y);
                     mt = checkRoomExists(mt);
-                case "Doggy":
-                    mt = new DoggyCave(x, y, new Item("Doggy", "A nice dog that was left here.", 100));
-                    mt = checkRoomExists(mt);
+                    break;
             }
         }
         return mt;
